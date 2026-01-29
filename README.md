@@ -31,6 +31,7 @@ This function sets the defaultRadius variable present in Config.qml to whatever 
 ## Todo:
   - Install script
   - Dynamic theme management & actual implementation of JSON themes
+  - Settings menu for changing matugen color scheme generation and wallpaper
   - Login & lock screen
   - Make skeletal powermenu buttons... not skeletal
   
