@@ -13,6 +13,21 @@ https://fonts.google.com/specimen/Google+Sans+Flex
 <br>
 move the downloaded font to ```/usr/share/fonts/TTF```
 <br>
+
+## Customization
+
+A lot of parameter modification can be done without even changing the variables present in Config.qml
+To see what's possible, run ```qs ipc show``` in your terminal. 
+It's recommended to set an alias in your .bashrc if you want to quickly change variables on the fly.
+Example bash function to set parameters:
+```
+setradius() {
+  echo "Setting defaultRadius to $1";
+  qs ipc call config setRadius $1;
+}
+```
+This function sets the defaultRadius variable present in Config.qml to whatever you specify it to be.
+
 ## Todo:
   - Install script
   - Dynamic theme management & actual implementation of JSON themes
