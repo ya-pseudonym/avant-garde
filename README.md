@@ -17,7 +17,7 @@ move the downloaded font to ```/usr/share/fonts/TTF```
 ## Customization
 
 A lot of parameter modification can be done without even changing the variables present in Config.qml
-To see what's possible, run ```qs ipc show``` in your terminal. 
+To see what's possible, run `qs ipc show` in your terminal. 
 It's recommended to set an alias in your .bashrc if you want to quickly change variables on the fly.
 Example bash function to set parameters:
 ```
