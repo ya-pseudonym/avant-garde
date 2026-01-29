@@ -16,8 +16,17 @@ move the downloaded font to ```/usr/share/fonts/TTF```
 
 ## Customization
 
-A lot of parameter modification can be done without even changing the variables present in Config.qml
-To see what's possible, run `qs ipc show` in your terminal. 
+By default, the shell ships with three themes:
+```default```
+```squared```
+```reallyRound```
+
+Run `qs ipc call theme setTheme (name of desired theme)` to switch in the terminal.
+
+Refer to the below tutorial that shows you how to configure your terminal to quickly call parameter configs.
+
+A lot of parameter modification can be done without even changing the variables present in json files.
+To see what's possible, run `qs ipc show` in your terminal. You can even change the font! 
 It's recommended to set an alias in your .bashrc if you want to quickly change variables on the fly.
 Example bash function to set parameters:
 ```
