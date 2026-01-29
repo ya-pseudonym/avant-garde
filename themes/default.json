@@ -1,8 +1,6 @@
 {
-    "name":         "default",
-    "description":  "Default ag-shell theme",
-    "font-family":  "Space Mono Nerd Font",
+    "font":      "Google Sans Flex",
     "radius":       8,
     "padding":      12,
-    "spacing":      4
+    "spacing":      8
 }

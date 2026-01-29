@@ -1,32 +1,16 @@
 import QtQuick
 import Quickshell
+import Quickshell.Io
+import "utils"
+
 QtObject {
+    property string themeFont: theme.themeFont
+    property int themePadding: theme.themePadding
+    property int themeRadius: theme.themeRadius
+    property int themeSpacing: theme.themeSpacing
 
-
-    property string sysFont:               "Google Sans Flex"
-    property int defaultSpacing:            8
-    property int transitionDuration:        200
-    property int containerPadding:          16
-    property int defaultRadius:             8
-
-    Behavior on defaultRadius {
-        NumberAnimation {
-            duration: transitionDuration
-            easing: Easing.OutQuad
-        }
-    }
-
-    Behavior on defaultSpacing {
-        NumberAnimation {
-            duration: transitionDuration
-            easing: Easing.OutQuad
-        }
-    }
-
-    Behavior on containerPadding {
-        NumberAnimation {
-            duration: transitionDuration
-            easing: Easing.OutQuad
-        }
-    }
+    property string sysFont:                themeFont ?? "Google Sans Flex"
+    property int defaultSpacing:            themeSpacing ?? 8
+    property int containerPadding:          themePadding ?? 16
+    property int defaultRadius:             themeRadius ?? 8
 }

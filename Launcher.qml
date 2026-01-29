@@ -25,9 +25,9 @@ Scope {
                 }
             }
             Rectangle {
-                anchors.top: parent.top
-                anchors.topMargin: 16
                 anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.topMargin: 16
                 implicitHeight: 256 - 32
                 implicitWidth: 320
                 color: root.setOpacity(colors.surface_container_lowest, 0.7)

@@ -50,7 +50,8 @@ Rectangle {
                         font.variableAxes: {
                             "ROND": 100,
                             "wght": 900,
-                            "wdth": 70
+                            "wdth": 70,
+
                         }
                         font.pixelSize: 32
                         color: colors.primary_fixed
@@ -60,8 +61,11 @@ Rectangle {
                         font.family: config.sysFont
                         font.pixelSize: 14
                         font.variableAxes: {
-                            "wdth": 125,
-                            "wght": 900
+                            "ROND": 100,
+                            "wdth": 150,
+                            "wght": 900,
+                            "slnt": -7,
+                            "GRAD": 70
                         }
                         color: colors.primary
                         horizontalAlignment: Text.AlignHCenter

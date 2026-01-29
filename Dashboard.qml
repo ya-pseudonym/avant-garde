@@ -8,12 +8,13 @@ Scope {
     id: root
     property bool shouldShow
     LazyLoader {
-        active: root.shouldShow
+        active: shouldShow
         PanelWindow {
-            id: dash
-            WlrLayershell.namespace: 'ag-dash'
             anchors.top: true
+            WlrLayershell.layer: WlrLayer.Overlay
             exclusiveZone: 0
+            WlrLayershell.namespace: 'ag-dash'
+            id: dash
             implicitHeight: contentHolder.height + config.containerPadding
             implicitWidth: contentHolder.width + config.containerPadding
             color: 'transparent'
@@ -37,7 +38,9 @@ Scope {
                         //Notifications{}
                         }
                     }
-                    MprisWidget{}
+                    MprisWidget{
+                        anchors.right: parent.right
+                    }
                 }
             }
         }

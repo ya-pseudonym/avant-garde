@@ -49,7 +49,8 @@ Repeater {
                         font.pixelSize: 18
                         font.variableAxes: {
                             "wdth": 200,
-                            "ROND": 150,
+                            "ROND": 50,
+                            "GRAD": 100,
                             "wght": 900
                         }
                         color: colors.primary_fixed
@@ -61,8 +62,10 @@ Repeater {
                         font.family: config.sysFont
                         font.variableAxes: {
                             "wdth": 100,
-                            "ROND": 150,
-                            "wght": 900
+                            "ROND": 20,
+                            "GRAD": 10,
+                            "wght": 900,
+                            "slnt": -10
                         }
                         font.pixelSize: 14
                         text: mpris.modelData.trackTitle

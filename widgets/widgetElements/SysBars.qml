@@ -79,6 +79,7 @@ RowLayout {
                     left: parent.left
                     right: parent.right
                 }
+                radius: parent.radius
                 implicitHeight: 2
                 color: colors.on_secondary
                 opacity: 0.25

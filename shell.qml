@@ -37,7 +37,6 @@ Scope {
 	}
 	IpcHandler {
 		target: "dash"
-
 		function setVisible(): void {
 			dash.shouldShow = !dash.shouldShow
 		}
@@ -49,6 +48,15 @@ Scope {
 		target: "launcher"
 		function setVisible(): void {
 			launcher.shouldShow = !launcher.shouldShow
+		}
+	}
+	ThemeTool{
+		id: theme
+	}
+	IpcHandler {
+		target: "theme"
+		function setTheme(newTheme:string): void {
+			theme.themeName = newTheme
 		}
 	}
 	}

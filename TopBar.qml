@@ -12,6 +12,7 @@ Scope {
     Variants {
         model: Quickshell.screens
         PanelWindow {
+            id: window
             required property var modelData
 	        screen: modelData
             WlrLayershell.namespace: 'ag-bar'
