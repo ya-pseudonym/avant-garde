@@ -1,0 +1,8 @@
+{
+    "name":         "default",
+    "description":  "Default ag-shell theme",
+    "font-family":  "Space Mono Nerd Font",
+    "radius":       8,
+    "padding":      12,
+    "spacing":      4
+}
