@@ -27,6 +27,14 @@ setradius() {
 }
 ```
 This function sets the defaultRadius variable present in Config.qml to whatever you specify it to be.
+<br>
+### Blur dispatching
+```
+You will need to set a layerrule in your `hyprland.conf` to dispatch blur to the shell elements.
+Example layerrules:
+```
+layerrule = blur on, match:namespace ag-dash
+layerrule = ignore_alpha 0, match:namespace ag-dash
 
 ## Todo:
   - Install script
