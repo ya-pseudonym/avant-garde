@@ -1,5 +1,6 @@
 # Avant-Garde
 A robust and extensible desktop shell made with Quickshell, built for hyprland.
+![showcase](https://github.com/ya-pseudonym/avant-garde/blob/master/showcase.png)
 This is just the shell. You will need to collect a few dependencies for it to fully work.
 The collected list of dependencies is below:
 <br>
