@@ -52,3 +52,7 @@ layerrule = ignore_alpha 0, match:namespace ag-dash
   - Login & lock screen
   - Make skeletal powermenu buttons... not skeletal
   
+## Next update will have:
+- Bar, launcher, dashboard overhaul
+- Settings menu, color palette settings
+- Revised visuals for consistency and better aesthetics
