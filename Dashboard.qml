@@ -35,12 +35,13 @@ Scope {
                         PowerMenu{
                             anchors.horizontalCenter: parent.horizontalCenter
                         }
-                        //Notifications{}
+                       // Notifications{}
                         }
                     }
-                    MprisWidget{
-                        anchors.right: parent.right
-                    }
+                    // MprisWidget{
+                    //     anchors.right: parent.right
+                    // }
+                    NewMpris{}
                 }
             }
         }

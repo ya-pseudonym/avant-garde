@@ -7,6 +7,7 @@ Scope {
     property string themeName: "default"
     property string themeFont: jsonData.font
     property real themeRadius: jsonData.radius
+    property real isOpaque: jsonData.isOpaque
     onThemeRadiusChanged: {
         oldRadius = themeRadius;
     }
@@ -53,6 +54,11 @@ Scope {
         path: Qt.resolvedUrl(`root:/themes/${themeName}.json`)
         blockLoading: true
         onFileChanged: {
+            console.log(jsonData.font);
+            console.log(jsonData.radius);
+            console.log(jsonData.spacing);
+            console.log(jsonData.padding);
+            console.log(jsonData.isOpaque);
             this.reload();
         }
     }

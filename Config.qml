@@ -8,7 +8,6 @@ QtObject {
     property int themePadding: theme.themePadding
     property int themeRadius: theme.themeRadius
     property int themeSpacing: theme.themeSpacing
-
     property string sysFont:                themeFont ?? "Google Sans Flex"
     property int defaultSpacing:            themeSpacing ?? 8
     property int containerPadding:          themePadding ?? 16

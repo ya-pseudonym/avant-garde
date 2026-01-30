@@ -29,8 +29,8 @@ Scope {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.topMargin: 16
                 implicitHeight: 256 - 32
-                implicitWidth: 320
-                color: root.setOpacity(colors.surface_container_lowest, 0.7)
+                implicitWidth: 512
+                color: config.opaque ? colors.surface_container_lowest : root.setOpacity(colors.surface_container_lowest, 0.7)
                 radius: config.defaultRadius * 2
                 border.color: colors.surface_container_highest
                 border.width: 2
@@ -160,9 +160,15 @@ Scope {
                                                 color: colors.primary
                                             }
                                             PropertyChanges {
-                                                target: text 
+                                                target: name 
                                                 color: colors.surface_container_highest
                                                 weight: 900
+                                                textWidth: 120
+                                            }
+                                            PropertyChanges {
+                                                target: desc
+                                                color: colors.surface_container_highest
+                                                weight: 500
                                                 textWidth: 120
 
                                             }
@@ -183,20 +189,36 @@ Scope {
                                         }
                                     ]
                                         Text {
-                                            id: text
-                                            anchors.verticalCenter: parent.verticalCenter
-                                            anchors.horizontalCenter: parent.horizontalCenter
+                                            id: name
+                                            x: 8
                                             font.variableAxes: {
                                                 "wght": weight,
                                                 "wdth": textWidth
                                             }
                                             font.family: config.sysFont
+                                            anchors.verticalCenter: parent.verticalCenter
                                             property int weight: 500
                                             property int textWidth: 100
-                                            property real fontSize: 12
-                                            font.pointSize: fontSize
+                                            font.pointSize: 12
                                             text: modelData.name
+                                            color: colors.primary_fixed
+                                        }
+                                        Text {
+                                            id: desc
+                                            anchors.left: name.right
+                                            anchors.verticalCenter: name.verticalCenter
+                                            anchors.leftMargin: 8
+                                            font.family: config.sysFont
                                             color: colors.primary
+                                            property int weight: 400
+                                            property int textWidth: 90
+                                            font.variableAxes: {
+                                                "wght": weight,
+                                                "wdth": textWidth
+                                            }
+                                            font.pointSize: 8
+                                            text: modelData.comment
+                                            
                                         }
                                         MouseArea {
                                             id: handler
@@ -215,7 +237,7 @@ Scope {
 
                             }
                         }
-
+                        }
                     }
 
                     }
@@ -225,4 +247,3 @@ Scope {
             }
         
         }
-    }

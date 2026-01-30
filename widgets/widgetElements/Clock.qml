@@ -32,7 +32,7 @@ Rectangle {
                         }
                         color: colors.secondary_fixed
                         font.pixelSize: 14
-                        
+                        anchors.horizontalCenter: parent.horizontalCenter
                         Process {
                             id: getUser
                             running: true
@@ -46,6 +46,7 @@ Rectangle {
                     }
                     Text {
                         anchors.verticalCenter: parent.verticalCenter
+                        anchors.horizontalCenter: parent.horizontalCenter
                         font.family: config.sysFont
                         font.variableAxes: {
                             "ROND": 100,
@@ -64,12 +65,11 @@ Rectangle {
                             "ROND": 100,
                             "wdth": 150,
                             "wght": 900,
-                            "slnt": -7,
+                            "slnt": -2,
                             "GRAD": 70
                         }
                         color: colors.primary
-                        horizontalAlignment: Text.AlignHCenter
-                        width: parent.implicitWidth
+                        anchors.horizontalCenter: parent.horizontalCenter
                         text: Qt.formatDateTime(clock.date, "ddd, MMM dd")
                     }
                 }
