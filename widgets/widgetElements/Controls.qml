@@ -52,6 +52,12 @@ import QtQuick.Effects
                         text: ''
                         color: colors.primary_container
                     }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            modelData.togglePlaying()
+                        }
+                    }
                 }
                 Rectangle {
                     anchors.verticalCenter: parent.verticalCenter

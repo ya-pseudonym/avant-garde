@@ -190,7 +190,7 @@ Repeater {
                             }
                             Behavior on width {
                                 NumberAnimation {
-                                    duration: 100
+                                    duration: 50
                                 }
                             }
                             Rectangle {

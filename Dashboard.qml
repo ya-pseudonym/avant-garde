@@ -31,17 +31,32 @@ Scope {
                     ColumnLayout {
                         spacing: config.defaultSpacing
                         ColumnLayout {
-                        SysWidget{}
-                        PowerMenu{
+                        // SysWidget{
+                        //     id: sys
+                        // }
+                        NewMpris{
+                            anchors.bottom: parent.bottom
                             anchors.horizontalCenter: parent.horizontalCenter
                         }
+                        //PowerMenu{
+                        //     anchors.horizontalCenter: parent.horizontalCenter
+                        // }
                        // Notifications{}
+                        }
+                    }
+                    ColumnLayout {
+                        spacing: config.defaultSpacing
+                        SysWidget{
+                            id: sys
+                        }
+                        Notifications{
+
+                            width: sys.width
                         }
                     }
                     // MprisWidget{
                     //     anchors.right: parent.right
                     // }
-                    NewMpris{}
                 }
             }
         }

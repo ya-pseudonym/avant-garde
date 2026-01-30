@@ -49,9 +49,10 @@ Rectangle {
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.family: config.sysFont
                         font.variableAxes: {
-                            "ROND": 100,
+                            "ROND": 0,
                             "wght": 900,
-                            "wdth": 70,
+                            "wdth": 50,
+                            "slnt": -80
 
                         }
                         font.pixelSize: 32
@@ -62,15 +63,15 @@ Rectangle {
                         font.family: config.sysFont
                         font.pixelSize: 14
                         font.variableAxes: {
-                            "ROND": 100,
-                            "wdth": 150,
+                            "ROND": 0,
+                            "slnt": -90,
+                            "wdth": 120,
                             "wght": 900,
-                            "slnt": -2,
                             "GRAD": 70
                         }
                         color: colors.primary
                         anchors.horizontalCenter: parent.horizontalCenter
-                        text: Qt.formatDateTime(clock.date, "ddd, MMM dd")
+                        text: Qt.formatDateTime(clock.date, "ddd, MMM d")
                     }
                 }
             }
